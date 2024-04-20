@@ -6,5 +6,7 @@ class Solution {
                               .filter(a -> n % a == 0)
                               .map(a -> (a == n / a) ? 1 : 2)
                               .sum();
+
+        // return (int) IntStream.rangeClosed(1, n).filter(i -> n % i == 0).count();
     }
 }
