@@ -6,5 +6,11 @@ class Solution {
             if (n % i == 0) answer += i;
         
 		return answer + n;
+        
+        // return IntStream
+        //     .rangeClosed(1, n)
+        //     .parallel()
+        //     .filter(i -> n % i == 0)
+        //     .sum();
     }
 }
